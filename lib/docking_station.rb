@@ -1,5 +1,10 @@
+require_relative 'bike'
+
 class DockingStation
     def release_bike
-        puts "bike released!"
+        Bike.new
+    end
+
+    def dock(bike)
     end
 end
