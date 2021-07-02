@@ -21,7 +21,7 @@ describe DockingStation do
     it { is_expected.to respond_to(:dock).with(1).argument }
 
     it "docks a bike" do
-      expect(subject.dock(Bike.new)).to be_instance_of(Bike)
+      expect(subject.dock(Bike.new)).to eq(subject.bikes)
     end
 
     it "raises an error when docking station is at capacity" do
